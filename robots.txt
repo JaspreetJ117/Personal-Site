@@ -1,0 +1,33 @@
+# Robots.txt for JaspreetJ117.github.io
+# This file prohibits image scraping while allowing other content indexing
+
+User-agent: *
+# Allow general crawling of the website
+Allow: /
+
+# Prohibit access to all image directories and files
+Disallow: /images/
+Disallow: /assets/
+Disallow: /*.jpg
+Disallow: /*.jpeg
+Disallow: /*.png
+Disallow: /*.gif
+Disallow: /*.webp
+Disallow: /*.svg
+Disallow: /*.ico
+Disallow: /*.bmp
+Disallow: /*.tiff
+
+# Additional protection for common image extensions
+Disallow: /*.JPG
+Disallow: /*.JPEG
+Disallow: /*.PNG
+Disallow: /*.GIF
+Disallow: /*.WEBP
+Disallow: /*.SVG
+Disallow: /*.ICO
+Disallow: /*.BMP
+Disallow: /*.TIFF
+
+# Reference to sitemap
+Sitemap: https://www.jjawanda.me/sitemap.xml

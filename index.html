@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaspreet Jawanda - Full Stack Developer & Designer</title>
+    <link rel="icon" href="images/Logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/CSS/main.css">
+    <script src="assets/JS/main.js"></script>
+
+    <style>
+        .navbar-logo img {
+            max-height: 150px;
+            max-width: 150px;
+            height: auto;
+            width: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="loading-text">Loading</div>
+        <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><img src="images/logo.png" alt="Logo"></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#ai-assistant">AI</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <ul class="nav-drawer">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#ai-assistant">AI Assistant</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <main>
+        <section class="hero">
+            <h1>Jaspreet Jawanda</h1>
+            <p class="subtext"><span id="typed"></span></p>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <a href="#projects" class="hero-cta">Explore My Work</a>
+        </section>
+
+        <section id="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                    <p>Hello! I'm Jaspreet Singh Jawanda, a dedicated software developer and business student with a passion for creating purposeful, efficient digital solutions. My journey in tech began at age nine, inspired by a deep curiosity about how software and games are built.</p>
+                    <p>With a strong foundation in both front-end and back-end development, I specialize in building responsive, user-focused web applications. I thrive on transforming real-world problems into clean, scalable solutions—always prioritizing intuitive design, functional logic, and long-term value.</p>
+                    <p>When I’m not coding, you’ll find me developing personal tools, exploring game mechanics, or refining my brand, JaspreetJ117. I’m always open to learning, collaborating, and building software that combines simplicity, performance, and purpose.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Warehouse Associate</h3>
+                        <p>Ringball Corporation — Mississauga, ON</p>
+                        <p class="duration">Jun 2023 – Sep 2024</p>
+                        <p>Handled inventory and fulfilled customer orders with precision and time management. Developed skills in teamwork, operations, and customer interaction during full-time summer periods.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Technology Expert</h3>
+                        <p>SS Maintenance — Brampton, ON</p>
+                        <p class="duration">Oct 2020 – Jun 2021</p>
+                        <p>Managed the company server for invoices and customer data. Provided IT support and optimized internal systems to streamline small business operations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Freelance Website Designer</h3>
+                        <p>Self-Employed — Brampton, ON</p>
+                        <p class="duration">Dec 2017 – Jun 2021</p>
+                        <p>Designed and developed over a dozen websites for local businesses using HTML, CSS, and JavaScript. Generated $3000+ in revenue and gained early real-world programming experience.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-button-container">
+                <a href="assets/Resume/Resume.pdf" class="section-button">Download My Resume</a>
+            </div>
+        </section>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <section id="ai-assistant">
+            <h2>Talk to My AI Assistant</h2>
+            <span class="subtitle">Powered by AI, this assistant can answer questions about my experience, skills, background, and more.</span>
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="chat-message ai">
+                        <div class="avatar">AI</div>
+                        <div class="chat-bubble">Hello! I'm Jaspreet's AI assistant. How can I help you learn more about him and his work?</div>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="e.g., What tech stack does Jaspreet use?">
+                    <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <img src="images/jumpsort.png" alt="JumpSort Screenshot">
+                    <div class="project-info">
+                        <h3>JumpSort</h3>
+                        <p>An efficient bucket-based sorting algorithm for negative and non-negative integers. Avoids comparisons by directly indexing values into buckets.</p>
+                        <p><strong>Tech:</strong> Python, Java, HTML, CSS, JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://jaspreetj117.github.io/JumpSort/" class="project-button view">View Project</a>
+                            <a href="https://github.com/JaspreetJ117/jumpsort" class="project-button source">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/usecdrive.png" alt="USecDrive Screenshot">
+                    <div class="project-info">
+                        <h3>USecDrive</h3>
+                        <p>Encrypts and decrypts data for secure local or cloud storage. Includes both a GUI and command-line support for flexible usage.</p>
+                        <p><strong>Tech:</strong> Java, GUI, Figma</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/JaspreetJ117/USecDrive" class="project-button view">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/ot.png" alt="Overlay Timer Screenshot">
+                    <div class="project-info">
+                        <h3>Overlay-Timer</h3>
+                        <p>A customizable overlay timer that stays on top of the workspace, helping users manage time effectively without breaking focus.</p>
+                        <p><strong>Tech:</strong> Python, HTML, CSS, JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/JaspreetJ117/Overylay-Timer" class="project-button view">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-button-container">
+                <a href="https://github.com/JaspreetJ117" class="section-button">View All Projects</a>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" action="mailto:jaspreetjawanda@proton.me" method="GET" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="_subject" placeholder="Subject" required> <textarea name="body" placeholder="Your Message" required></textarea> <button type="submit">Send Message</button>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/jaspreetj117/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/JaspreetJ117"><i class="fab fa-github"></i></a>
+                <a href="https://steamcommunity.com/id/xX_JAS117_Xx/"><i class="fab fa-steam"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Jaspreet Jawanda. All rights reserved.</p>
+        <p>Made in Canada &#127809;</p> 
+        <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://www.jjawanda.me/legacy-portfolios/">Legacy Portfolios</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
