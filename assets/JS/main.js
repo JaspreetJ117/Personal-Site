@@ -25,17 +25,40 @@ document.addEventListener('DOMContentLoaded', () => {
             const navDrawer = document.querySelector('.nav-drawer');
             const navLinks = document.querySelectorAll('.nav-drawer a'); // Links inside the drawer
 
+            const toggleDrawer = (forceOpen = null) => {
+                const shouldOpen = forceOpen !== null ? forceOpen : !navDrawer.classList.contains('is-open');
+                navDrawer.classList.toggle('is-open', shouldOpen);
+                document.body.style.overflow = shouldOpen ? 'hidden' : '';
+                navDrawer.setAttribute('aria-hidden', shouldOpen ? 'false' : 'true');
+                hamburger.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
+            };
+
+            toggleDrawer(false);
+
             hamburger.addEventListener('click', () => {
-                navDrawer.classList.toggle('is-open');
-                // Toggle body scroll lock to prevent scrolling when drawer is open
-                document.body.style.overflow = navDrawer.classList.contains('is-open') ? 'hidden' : '';
+                toggleDrawer();
+            });
+
+            hamburger.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    toggleDrawer();
+                } else if (event.key === 'Escape') {
+                    toggleDrawer(false);
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && navDrawer.classList.contains('is-open')) {
+                    toggleDrawer(false);
+                    hamburger.focus();
+                }
             });
 
             // Close drawer when a link is clicked
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
-                    navDrawer.classList.remove('is-open');
-                    document.body.style.overflow = ''; // Re-enable body scroll
+                    toggleDrawer(false);
                 });
             });
 
